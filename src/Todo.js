@@ -2,7 +2,7 @@
 // components
 //props are properties allows us to differentiate
 
-import { Avatar, List, ListItem, ListItemAvatar, ListItemText} from '@mui/material'
+import { Avatar, List, ListItem, ListItemText} from '@mui/material'
 import React from 'react';
 import './Todo.css';
 
@@ -13,9 +13,7 @@ function Todo(props) {
     // Material Ui Snipets
     <List className='todo_list'>
         <ListItem>
-            <ListItemAvatar>
-            </ListItemAvatar>
-        <ListItemText primary="Todo" secondary={props.text} />
+        <ListItemText primary={props.text} secondary="Todos" />
       </ListItem>
        {/* <li>{props.todo}</li> */}
     </List>
